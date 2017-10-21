@@ -1,5 +1,5 @@
 /**
- * 4 channel animation
+ * 4 channel LED Animation
  * LED Strip A - Pin 4
  * LED Strip B - Pin 5
  * LED Strip C - Pin 6
@@ -54,6 +54,9 @@ void loop()
   delay(100);
 }
 
+/**
+ * Glow a LED
+ */
 void walk()
 {
   int i;
@@ -66,6 +69,9 @@ void walk()
   }
 }
 
+/**
+ * Walk in reverse pattern
+ */
 void walk_reverse()
 {
   int i;
@@ -78,6 +84,9 @@ void walk_reverse()
   }
 }
 
+/**
+ * For all LEDs set ON or OFF
+ */
 void all(bool PINMODE)
 {
   int i;
@@ -87,6 +96,9 @@ void all(bool PINMODE)
   }
 }
 
+/**
+ * Flash once
+ */
 void flash()
 {
   all(ON);
